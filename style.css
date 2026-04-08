@@ -191,6 +191,10 @@ body {
   border: 1px solid #ccc;
 }
 
+.academics-img-2 { 
+  height: 405px;
+  border-radius: 20px;
+}
 
 .about-us-container{
     /* color: red; */
@@ -277,7 +281,7 @@ body {
 }
 
 .academics-1{
-  width: 80%;
+  width: 90%;
 }
 
 .academics-img-1 {
@@ -476,6 +480,11 @@ body {
   height: 15rem;
   border-radius: 20px;
 }
+
+/* .academics-img-2 {
+  height: 3rem;
+  border-radius: 20px;
+} */
 .hero h1 {
   font-size: 3rem;
 }
@@ -513,9 +522,14 @@ body {
   gap: 20px;
 }
 
- .academics-img-2 {
+.academics-img-1-pro-2{
   height: 13rem;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+
+.academics-img-2{
+   height: 13rem;
+  border-radius: 10px;
 }
 
 

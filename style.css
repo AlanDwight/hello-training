@@ -285,6 +285,7 @@ body {
   border-radius: 20px;
 }
 
+
 .event-img-1{
   height: 20rem;
   border-radius: 20px;
@@ -502,7 +503,7 @@ body {
 }
 
 .academics-img-1-pro{
-  height: 230px;
+  height: 165px;
   border-radius: 10px;
 }
 
@@ -512,4 +513,18 @@ body {
   gap: 20px;
 }
 
+ .academics-img-2 {
+  height: 13rem;
+  border-radius: 20px;
 }
+
+
+}
+
+/* @media (max-width: 768px) {
+  .academics-img-2 {
+  height: 1rem;
+  border-radius: 20px;
+}
+  
+} */

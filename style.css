@@ -1,0 +1,515 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  position: sticky;   /* key property */
+  top: 0;             /* stick to the very top */
+  z-index: 1000;      /* ensure it stays above other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #37368e;
+  color: #fff;
+  padding: 10px 20px
+}
+
+.logo-img{
+    height: 70px;   /* adjust to desired size */
+   width: auto;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.nav{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.hero {
+  height: 100vh; /* full viewport height */
+  width: 100%;   /* full width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center vertically */
+  align-items: center;     /* center horizontally */
+  text-align: center;
+  /* padding: 0 20px; */
+  background: url('/images/2205_0.jpg') no-repeat center center;
+  background-size: cover;   /* ensures full coverage */
+  background-attachment: fixed; /* optional: parallax-like effect */
+  color: #fff;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.2); /* adjust opacity for fade */
+  z-index: 0;
+}
+
+.hero h1, .hero p, .hero .btn {
+  position: relative;
+  z-index: 1; /* keep text above overlay */
+}
+
+.hero h1 {
+    font-size: 70px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.hero p {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #37368e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: black 1px 1px 5px;
+}
+
+.about, .courses, .contact , .academics ,  .services , .collaboration, .events{
+  padding: 40px 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 6px;
+  flex: 1 1 250px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background: #37368ee1;
+    position: absolute;
+    gap: 10px;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: larger;
+    box-shadow: black 1px 1px 5px;
+    transform: scale(0.9);
+    
+  }
+
+  .nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  
+  
+  
+}
+
+.lang-switcher {
+  margin-left: 20px;
+}
+
+.lang-switcher select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+
+.about-us-container{
+    /* color: red; */
+    width: 50%;
+    /* background-color: #f4f4f4; */
+    padding: 50px;
+    border-radius: 20px;
+}
+.link-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* color: red; */
+    width: 80%;
+    background-color: #f4f4f4;
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.link-container li {
+     list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  
+}
+
+.link-container a {
+    text-decoration: none;
+  color: inherit; 
+}
+.decor-line-container{
+  display: flex;
+  justify-content: center;
+}
+.decor-line {
+  border: none;
+  height: 3px;
+  width: 50vh;
+  background-color: #37368e;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.biography-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  /* background-color: red; */
+}
+
+.img-1{
+  height: 30rem;
+  border-radius: 20px;
+  box-shadow: grey .5px .5px 10px ;
+}
+
+.motto{
+  width: 50%;
+}
+.vision{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-container{
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.academics{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  /* width: 100%; */
+}
+
+.academics-1{
+  width: 80%;
+}
+
+.academics-img-1 {
+  height: 25rem;
+  border-radius: 20px;
+}
+
+.event-img-1{
+  height: 20rem;
+  border-radius: 20px;
+}
+
+.event-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  gap: 50px;
+  border-radius: 30px;
+  padding: 10px;
+  width: 60%;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.event-card:hover{
+  scale: 1.05;
+  transition: all .5s ease-in-out;
+}
+
+.academics-img-1-pro{
+  height: 350px;
+  border-radius: 30px;
+}
+
+
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* space between cards */
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.sub-event-card{
+
+}
+
+.contact {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  /* background-color: red; */
+}
+
+.contact-form{
+  width: 80%;
+}
+
+.contact-container {
+  max-width: 1000px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  /* background-color: yellow; */
+}
+
+.contact-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  text-align: left;
+  /* background-color: red; */
+  /* width: 100vh; */
+}
+
+/* Form */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  background: #37368e;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #2980b9;
+}
+
+/* Info */
+.contact-info {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+}
+.logo-end{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img-end{
+  height: 200px;
+
+}
+
+.flag-icon{
+  height: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .link-container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .biography-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  /* background-color: red; */
+}
+
+  .motto{
+    width: 80%;
+  }
+  .about-us-container{
+    /* color: red; */
+    width: 80%;
+    /* background-color: #f4f4f4; */
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.vision-container{
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  /* background-color: red; */
+}
+
+.academics-img-1 {
+  height: 15rem;
+  border-radius: 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p{
+  font-size: 1.5rem;
+}
+
+.event-img-1{
+  height: 13rem;
+  border-radius: 20px;
+}
+
+.event-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  gap: 50px;
+  border-radius: 30px;
+  padding: 10px;
+  width: 60%;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.academics-img-1-pro{
+  height: 230px;
+  border-radius: 10px;
+}
+
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+}

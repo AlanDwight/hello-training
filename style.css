@@ -142,10 +142,28 @@ body {
 }
 
 .footer {
-  background: #333;
+  /* background: #333; */
+  background-color:#37368e;
   color: #fff;
   text-align: center;
-  padding: 15px;
+  /* padding: 15px; */
+  padding: 50px;
+}
+
+.history{
+  width: 40%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.history a{
+  text-decoration: none;
+  font-weight:bold;
+  color: black;
+  font-size: 25px;
+  /* border: 1px dotted black;
+  padding: 20px;
+  border-radius: 20px; */
 }
 
 /* Responsive */
@@ -261,6 +279,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.our-vision{
+  margin-top: 3rem;
 }
 
 .vision-container{
@@ -431,6 +453,45 @@ body {
   height: 30px;
 }
 
+.student-staff-container{
+  display: flex;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.student-staff-container div{
+  /* background-color: yellow; */
+  width: 100%;
+}
+
+.meet a{
+  text-decoration: none;
+  font-weight:bold;
+  color: white;
+  font-size: 17px;
+
+}
+
+.meet-btn {
+  border: none;
+  padding: 20px 30px;
+  width: 50%;
+  background-color: #37368e;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(108, 92, 231, 0.6);
+  transition: 0.3s;
+}
+
+.meet-btn:hover{
+  box-shadow: 0 0 20px rgba(108, 92, 231, 1);
+}
+
+.card-image img{
+  height: 200px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .contact-content {
@@ -531,7 +592,29 @@ body {
    height: 13rem;
   border-radius: 10px;
 }
+.history a{
+  text-decoration: none;
+  font-weight:bold;
+  color: black;
+  font-size: 21px;
+  /* border: 1px dotted black;
+  padding: 20px;
+  border-radius: 20px; */
+}
 
+.student-staff-container{
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  gap: 20px;
+}
+
+.meet-btn{
+  width: 100%;
+}
 
 }
 

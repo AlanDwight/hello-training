@@ -261,12 +261,18 @@ body {
 .biography-container{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 100px;
   /* background-color: red; */
 }
 
 .img-1{
+  height: 30rem;
+  border-radius: 20px;
+  box-shadow: grey .5px .5px 10px ;
+}
+
+.img-1-bio{
   height: 30rem;
   border-radius: 20px;
   box-shadow: grey .5px .5px 10px ;
@@ -343,6 +349,13 @@ body {
 .books-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* space between cards */
+  padding: 20px;
+}
+
+.staff-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 columns */
   gap: 20px; /* space between cards */
   padding: 20px;
 }
@@ -492,6 +505,32 @@ body {
   height: 200px;
 }
 
+.biography-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* background-color: rgba(255, 0, 0, 0.429); */
+}
+
+.biography-details-align{
+  text-align: start;
+  padding: 10px;
+}
+
+.socials{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.socials img{
+  padding: 5px;
+  height: 40px;
+}
+
+.socials a{
+  text-decoration: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .contact-content {
@@ -583,6 +622,12 @@ body {
   gap: 20px;
 }
 
+.staff-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
 .academics-img-1-pro-2{
   height: 13rem;
   border-radius: 10px;
@@ -614,6 +659,25 @@ body {
 
 .meet-btn{
   width: 100%;
+}
+.teacher-h1{
+  font-size: 18px;
+
+}
+
+.header-small-screen{
+  font-size: 25px;
+}
+.foster{
+  font-size: 19px;
+}
+
+.img-1-bio{
+  height: 20rem;
+}
+
+.socials img{
+  height: 32px;
 }
 
 }

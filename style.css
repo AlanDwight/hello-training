@@ -680,6 +680,11 @@ body {
   height: 32px;
 }
 
+.line-container{
+  /* background-color: red; */
+  width: 80%;
+}
+
 }
 
 /* @media (max-width: 768px) {
